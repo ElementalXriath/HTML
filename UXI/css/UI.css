@@ -1,0 +1,167 @@
+/*-------------
+Main Page 
+---------------- */
+.header-btn {
+    width: 160px;
+    height: 44px;
+    box-shadow: 0 2px 2px 0 blue, 0 4px 10px 0 #6DD5FA;
+    text-align: center;
+    margin: 40px;
+}
+
+.glowing {
+    text-shadow: 1px 4px 6px white;
+}
+
+.img-card {
+    border: blue 3px solid;
+    background-color: aliceblue;
+    border-radius: 0px;
+}
+
+.ocean {
+    background:linear-gradient(#000046, #0f0c29);
+   
+}
+
+.ocean-2 {
+    background:linear-gradient( to right,#000046, #1CB5E0);
+    opacity: .9;
+}
+
+
+.ocean-fire {
+    background:linear-gradient(black,#000046,#000046, #1CB5E0);
+}
+
+.family {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+/*-------------
+Features Block
+---------------- */
+.left-border {
+    border-left: blue 4px solid;
+}
+
+.icon {
+   color: #000046 ;
+   text-shadow: 1px 4px 6px #302b63;
+}
+
+.grey-border {
+    border: solid gray 3px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 black;
+}
+
+.blue-shadow {
+    box-shadow: 0 4px 8px 0 #000046, 0 6px 20px 0 #1CB5E0;
+}
+
+.card-grad {
+    background:linear-gradient(to right,  #65C7F7,#9CECFB);
+}
+
+.icon-2 {
+    font-size: xx-large;
+}
+
+
+.grow { transition: all .3s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+/*-------------
+Float Across
+---------------- */
+.thing {
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveAcross 10s linear infinite;
+  }
+  @keyframes moveAcross {
+    0% {
+      left: -300px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  @keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px #9CECFB;
+     }
+     100% {
+          box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+     }
+}
+
+.example-1:hover
+{
+     animation: shadow-pulse 1s infinite;
+     border:1px solid black;
+     border-radius: 16px;
+     
+}
+/*-------------
+RESP DESIGN BLOCK
+---------------- */
+
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+
+
+

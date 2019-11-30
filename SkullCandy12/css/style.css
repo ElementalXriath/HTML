@@ -1,0 +1,157 @@
+.fullpage {
+    height: 660px;
+}
+
+.halfpage {
+    height: 330px;
+}
+
+.boldest {
+    font-weight: 700;
+}
+.boldest1 {
+    font-weight: 900;
+}
+.sqaure {
+    border-radius: 0px;
+    width: 180px;
+    height: 40px;
+}
+.w3 {
+	position: relative;
+	text-align: center;
+	color: white;
+	}
+.lit {
+  border:1px solid slategray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.faded {   
+    background: -webkit-linear-gradient(aqua, blueviolet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.grad {
+    background-image: linear-gradient(to bottom right, black , black, pink , white);
+}
+.grad2 {
+    background-image: linear-gradient(to bottom right, black , black, dodgerblue, white);
+}
+.grad3 {
+    background-image: linear-gradient(to bottom right, black , black, #32313e);
+}
+
+
+
+  @media (max-width: 40em) {
+    .element {
+    display: none;
+    }
+    }
+
+.cursive {
+    text-shadow: 1px 1px 2px white;
+    font-family: 'Rationale', sans-serif;
+}
+
+.lb {
+    border-left: 4px solid blue;
+}
+
+.lb2 {
+    border-left: 4px solid blueviolet;
+}
+
+.shade {
+     box-shadow:inset 0 4px 8px 0 rgba(0, 0, 0, 0.2),inset 0 6px 20px 0 blueviolet;
+     border: 1px solid blueviolet
+}
+.shade2 {
+    box-shadow:inset 0 4px 8px 0 rgba(0, 0, 0, 0.2),inset 0 6px 20px 0 aqua;
+    border: 1px solid aquamarine
+}
+
+.parallax { 
+	/* The image used */
+	background-image: url("../Img/para.jpg");
+
+	/* Set a specific height */
+	height: 350px; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .aa {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: purple;
+
+    float: left;
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  .aa::after {
+    background-color: purple;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+  }
+  
+  .aa:hover::after {
+    width: 100%;
+  }
+  
+
+  

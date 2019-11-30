@@ -1,0 +1,713 @@
+.logo {
+      
+	background: -webkit-linear-gradient(slategrey, whitesmoke);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.logo3 {
+	font-size: 72px;
+	background: -webkit-linear-gradient(black,#203A43,#2C5364);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+.logo2 {
+
+	color:aqua;
+
+	font-weight: 400;
+}
+.w3 {
+	position: relative;
+	text-align: center;
+	color: white;
+	}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+.parallax { 
+	/* The image used */
+	background-image: url("../Img/vg4.jpg");
+
+	/* Set a specific height */
+	height: 350px; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax1 { 
+	/* The image used */
+	background-image: url("../Img/pd3.png");
+
+	/* Set a specific height */
+	height: 350px; 
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.rotate {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 120px;
+height: 120px;
+margin:-60px 0 0 -60px;
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+}
+
+.shadow-in {
+  -moz-box-shadow:    inset 0 0 10px black;
+  -webkit-box-shadow: inset 0 0 10px black;
+  box-shadow:         inset 0 0 10px black;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }   
+
+#circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+width: 150px;
+  height: 150px;	
+}
+
+.loader {
+  width: calc(100% - 0px);
+height: calc(100% - 0px);
+border: 8px solid #162534;
+border-top: 8px solid #09f;
+border-radius: 50%;
+animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+100% {transform: rotate(360deg);}
+} 
+.our-team-main
+{
+	width:100%;
+	height:200px;
+	border-bottom:7px aqua solid;
+	background:#fff;
+	text-align:center;
+	border-radius:10px;
+	overflow:hidden;
+	position:relative;
+	transition:0.5s;
+	margin-bottom:2px;
+}
+
+
+.our-team-main img
+{
+	border-radius:50%;
+	margin-bottom:20px;
+	width: 90px;
+}
+
+.our-team-main h3
+{
+	font-size:20px;
+	font-weight:700;
+}
+
+.our-team-main p
+{
+	margin-bottom:0;
+}
+
+.team-back
+{
+	width:100%;
+	height:200px;
+	position:absolute;
+	top:0;
+	left:0;
+	padding:5px 15px 0 15px;
+	text-align:left;
+	background:#fff;
+	
+}
+
+.team-front
+{
+	width:100%;
+	height:200px;
+	position:relative;
+	z-index:10;
+	background:#fff;
+	padding:15px;
+	bottom:0px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover .team-front
+{
+	bottom:-200px;
+	transition: all 0.5s ease;
+}
+
+.our-team-main:hover
+{
+	border-color:#777;
+	transition:0.5s;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+  }
+  
+  html,
+  css {
+	width: 100%;
+	height: 100%;
+  }
+  
+  .position {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: 15%;
+  }
+  
+  #workarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1e1a3e;
+	font-family: Raleway;
+  }
+  
+  #personal {
+	color:white;
+	text-decoration:none;
+	position:absolute;
+	bottom:15px;
+	right:2%;
+  }
+  /*    start code for the actual button:         */
+  
+  
+  /*   
+	  Spot is the span on the inside of the href that
+	  fills the parent and makes the hover and link work
+	  for the entire div
+  */
+  
+  .spot {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+  }
+  /*
+	  This is the outer svg wrapper that the SVG itself will 
+	  fill. Multiple svg-wrapper classes can be put side by side.
+  */
+  
+  .svg-wrapper {
+	margin-top: 0;
+	position: relative;
+	width: 150px;
+	/*make sure to use same height/width as in the html*/
+	height: 40px;
+	display: inline-block;
+	border-radius: 3px;
+	margin-left: 5px;
+	margin-right: 5px
+  }
+  /*
+	This is where we define the fill, color, thickness,
+	and stroke pattern of the SVG when there is no hover.
+	The dasharray and offset together define the line position
+	under the words. Here's also where the transition speed is set.
+  */
+  
+  #shape {
+	stroke-width: 6px;
+	fill: transparent;
+	stroke: aqua;
+	stroke-dasharray: 85 400;
+	stroke-dashoffset: -220;
+	transition: 1s all ease;
+  }
+  /* 
+	  Pushing the text up into the SVG. Without this the
+	  text would be below the div's.
+  */
+  
+  #text {
+	margin-top: -35px;
+	text-align: center;
+	color: white
+  }
+  
+  #text a {
+	color: white;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 1.1em;
+  }
+  /* 
+	  Changing the shape on hover. I change the color of the stroke,
+  make it thinner, then set it to again wrap around the entire parent element.
+  */
+  
+  .svg-wrapper:hover #shape {
+	stroke-dasharray: 50 0;
+	stroke-width: 3px;
+	stroke-dashoffset: 0;
+	stroke: blue;
+  }
+
+  .fc {
+	background-image: linear-gradient(white, black , black);
+  }
+  .button:before,.button:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: aqua;
+	transition:400ms ease all;
+  }
+  .button:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+  }
+  .button:hover:before,.button:hover:after{
+	width:100%;
+	transition:800ms ease all;
+  }
+  .glow:hover{
+	  color: #009FFD;
+
+  }
+  .shimmer {
+	display: inline-block;
+	color:white;
+	
+	background: #acacac -webkit-gradient(linear, 100% 0, 0 0, from(#acacac), color-stop(0.5, #ffffff), to(#acacac));
+	
+	background-position: -4rem top; /*50px*/
+	background-repeat: no-repeat;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation-name: shimmer;
+	-webkit-animation-duration: 2.2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-background-size: 4rem 100%; /*50px*/
+	
+  }
+  
+  @-webkit-keyframes shimmer {
+	  0% {
+		  background-position: -4rem top; /*50px*/
+	  }
+  
+	  70% {
+		  background-position: 12.5rem top; /*200px*/
+	  }
+  
+	  100% {
+		  background-position: 12.5rem top; /*200px*/
+	  }
+  }
+  .module-border-wrap {
+	max-width: 250px;
+	padding: 1rem;
+	position: relative;
+	background: linear-gradient(to right, red, purple);
+	padding: 3px;
+  }
+  
+  .module {
+	background: #222;
+	color: white;
+	padding: 2rem;
+  }
+  section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+.mbr-bold {
+    font-weight: 700;
+}
+
+ p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+	font-size: 1re}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.ct {
+	position: relative;
+
+  }
+
+  
+  .middle {
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+  
+  .ct:hover .image {
+	opacity: 0.3;
+  }
+  
+  .ct:hover .middle {
+	opacity: 1;
+  }
+  
+  .text {
+	background-color: #4CAF50;
+	color: white;
+	font-size: 16px;
+	padding: 16px 32px;
+  }
+  .submit-wrapper {
+    margin-top:45px;
+}
+.submit-wrapper a {
+    border:2px solid aqua;
+    color:white;
+    padding:15px 20px;
+    text-decoration:none;
+    position:relative;
+    letter-spacing:8px;
+    transition:all 0.6s;
+    z-index:1;
+}
+.submit-wrapper a:before,
+.submit-wrapper a:after {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    width:24px;
+    height:4px;
+    background:aqua;
+    margin-left:-12px;
+    margin-top:-2px;
+    transition:all 0.6s;
+}
+.submit-wrapper a:after {
+    left:auto;
+    right:0;
+    margin-right:-12px;
+}
+.submit-wrapper a:hover:before,
+.submit-wrapper a:hover:after {
+    width:100%;
+    transition:all 0.6s;
+    background:#fff;
+    transform:scaleY(5);
+    z-index:-1;
+}
+.submit-wrapper a:hover {
+    text-decoration:none;
+    background:aqua;
+    transition:all 0.6s;
+    color:black;
+}
+
+/* title styles */
+.home-title span{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title span::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: a-ltr-after 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    animation: a-ltr-before 2s cubic-bezier(.77,0,.18,1) forwards;
+    transform: translateX(0);
+}
+
+.home-title span:nth-of-type(1)::before,
+.home-title span:nth-of-type(1)::after{
+    animation-delay: 1s;
+}
+
+.home-title span:nth-of-type(2)::before,
+.home-title span:nth-of-type(2)::after{
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after{
+    0% {transform: translateX(-100%)}
+    100% {transform: translateX(101%)}
+}
+
+@keyframes a-ltr-before{
+    0% {transform: translateX(0)}
+    100% {transform: translateX(200%)}
+}
+.text.hidden {
+	border-bottom: 1px solid #fff;
+  }
+  
+  .text li {
+	display: inline-block;
+	float: left;
+	font-weight: 700;
+	font-size: 2em;
+	color: #fff;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+	max-width: 2em;
+  }
+  .text.hidden li.spaced {
+	padding-left: 0;
+  }
+  .text li.spaced {
+	padding-left: 0.5em;
+  }
+  
+  .text.hidden li.ghost {
+	opacity: 0;
+	max-width: 0;
+  }
+   .grow:hover {
+	transform: scale(1.1);
+	color: orange;
+   }
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+	background-color: #bbb;
+	color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+	background-color: dodgerblue;
+	color: white;
+	transform: rotateY(180deg);
+  }
+  .body{
+	background: #383A43;
+   background: -webkit-radial-gradient(center center, circle cover, #42444c,#383A43,#2E3037); /* Safari 5.1 to 6.0 */
+   background: -o-radial-gradient(center center, circle cover, #42444c,#383A43,#2E3037); /* For Opera 11.6 to 12.0 */
+   background: -moz-radial-gradient(center center, circle cover,#42444c,#383A43,#2E3037); /* For Firefox 3.6 to 15 */
+   background: radial-gradient(center center, circle cover,#42444c,#383A43,#2E3037);
+  
+  }
+  .blueish
+  {
+	
+
+	color:#1da1f2;
+	text-shadow: 0px 0px 10px #1da1f2;
+  }
+  .redish
+  {
+	
+
+	color:red;
+	text-shadow: 0px 0px 10px orangered;
+  }
+  .tweet {
+	  margin-top: 100px;
+	}
+  .list {
+	  color: #fff;
+	  list-style: none;
+	  padding-left: 0px;
+	  display:block;
+  }
+  .list> li{
+	  padding:20px 30px;
+	  display:inline;
+	  font-size:28px;
+	  margin:-1px;
+	  color:#2E3037;
+	  background: linear-gradient(#5d606d,#2b2d33);
+	  box-shadow: 0px 0px 2px 2px #2E3037;
+  }
+  .list> li:first-of-type
+  {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+  
+  }
+  .list> li:last-of-type
+  {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+  }
+  
+  .list>li:hover {
+	  color:red;
+	  text-shadow: 2px 2px 10px #C90101;
+	  background: linear-gradient(#383A43,#151619);
+	  border:1px solid #424448;
+	 box-shadow: 0px 0px 10px 3px #151619;
+  
+	  padding:22px 30px;
+	  cursor:pointer;
+  }
+  .list>li:active
+  {
+	background:linear-gradient(#2c2e38,#060708);
+	padding:20px 30px;
+  }
+  html { overflow-x: hidden; -moz-overflow-x: hidden; -webkit-overflow-x: hidden; -ms-overflow-x: hidden; -o-overflow-x: hidden;}
+  .sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	text-align:center;
+  }
+  
+  .sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+	color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+  }
